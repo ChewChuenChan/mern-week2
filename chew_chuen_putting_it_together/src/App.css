@@ -1,0 +1,15 @@
+.App {
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+
+}
+.container {
+  width:30%;
+  margin:20px;
+}
+
+.list, .title {
+  margin:5px;
+}
