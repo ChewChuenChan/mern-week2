@@ -29,39 +29,39 @@ const Form = (props) => {
             <form className="m-5 " onSubmit ={createUser}>
                 <div className="mb-3">
                     <label className="form-label">First Name:</label>
-                    <input type="text" className="form-control" onChange={(e) => {
+                    <input type="text" className="form-control" value={firstName} onChange={(e) => {
                         setFirstName(e.target.value)
                     }}/>
                 </div>
 
                 <div className="mb-3">
                     <label className="form-label">Last Name:</label>
-                    <input type="text" className="form-control" onChange={(e) => {
+                    <input type="text" className="form-control" value={lastName} onChange={(e) => {
                         setLastName(e.target.value)
                     }}/>
                 </div>
 
                 <div className="mb-3">
                     <label className="form-label">Email:</label>
-                    <input type="text" className="form-control" onChange={(e) => {
+                    <input type="text" className="form-control" value={email} onChange={(e) => {
                         setEmail(e.target.value)
                     }}/>
                 </div>
 
                 <div className="mb-3">
                     <label className="form-label">Password:</label>
-                    <input type="password" className="form-control" onChange={(e) => {
+                    <input type="password" className="form-control" value={password} onChange={(e) => {
                         setPassword(e.target.value)
                     }}/>
                 </div>
 
                 <div className="mb-3">
                     <label className="form-label">Confirm Password:</label>
-                    <input type="password" className="form-control" onChange={(e) => {
+                    <input type="password" className="form-control" value={confirmPassword} onChange={(e) => {
                         setConfirmPassword(e.target.value)
                     }}/>
                 </div>
-
+                <button type="submit" className="btn btn-primary">Submit</button>
             </form>
 
             <div className ="container">
